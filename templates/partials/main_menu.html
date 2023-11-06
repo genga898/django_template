@@ -1,0 +1,153 @@
+{% load static %}
+<!-- Main Menu Section -->
+<section class="menu">
+	<nav class="navbar navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<h2 class="menu-title">Main Menu</h2>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div><!-- / .navbar-header -->
+
+			<!-- Navbar Links -->
+			<div id="navbar" class="navbar-collapse collapse text-center">
+				<ul class="nav navbar-nav">
+
+					<!-- Home -->
+					<li class="dropdown ">
+						<a href="{% url 'home' %}">Home</a>
+					</li><!-- / Home -->
+
+
+					<!-- Elements -->
+					<li class="dropdown dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+							role="button" aria-haspopup="true" aria-expanded="false">Shop <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<div class="dropdown-menu">
+							<div class="row">
+
+								<!-- Basic -->
+								<div class="col-lg-6 col-md-6 mb-sm-3">
+									<ul>
+										<li class="dropdown-header">Pages</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{% url 'shop' %}">Shop</a></li>
+										<li><a href="{% url 'checkout' %}">Checkout</a></li>
+										<li><a href="{% url 'cart' %}">Cart</a></li>
+										<li><a href="{% url 'pricing' %}">Pricing</a></li>
+										<li><a href="{% url 'confirmation' %}">Confirmation</a></li>
+
+									</ul>
+								</div>
+
+								<!-- Layout -->
+								<div class="col-lg-6 col-md-6 mb-sm-3">
+									<ul>
+										<li class="dropdown-header">Layout</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{% url 'product-single' %}">Product Details</a></li>
+										<li><a href="{% url 'shop-sidebar' %}">Shop With Sidebar</a></li>
+
+									</ul>
+								</div>
+
+							</div><!-- / .row -->
+						</div><!-- / .dropdown-menu -->
+					</li><!-- / Elements -->
+
+
+					<!-- Pages -->
+					<li class="dropdown full-width dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+							role="button" aria-haspopup="true" aria-expanded="false">Pages <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<div class="dropdown-menu">
+							<div class="row">
+
+								<!-- Introduction -->
+								<div class="col-sm-3 col-xs-12">
+									<ul>
+										<li class="dropdown-header">Introduction</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{% url 'contact' %}">Contact Us</a></li>
+										<li><a href="{% url 'about' %}">About Us</a></li>
+										<li><a href="{% url 'errorpage' %}">404 Page</a></li>
+										<li><a href="{% url 'coming-soon' %}">Coming Soon</a></li>
+										<li><a href="{% url 'faq' %}">FAQ</a></li>
+									</ul>
+								</div>
+
+								<!-- Contact -->
+								<div class="col-sm-3 col-xs-12">
+									<ul>
+										<li class="dropdown-header">Dashboard</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{% url 'dashboard' %}">User Interface</a></li>
+										<li><a href="{% url 'order' %}">Orders</a></li>
+										<li><a href="{% url 'address' %}">Address</a></li>
+										<li><a href="{% url 'profile-details' %}">Profile Details</a></li>
+									</ul>
+								</div>
+
+								<!-- Utility -->
+								<div class="col-sm-3 col-xs-12">
+									<ul>
+										<li class="dropdown-header">Utility</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="{% url 'login' %}">Login Page</a></li>
+										<li><a href="{% url 'signin' %}">Signin Page</a></li>
+										<li><a href="{% url 'forget-password' %}">Forget Password</a></li>
+									</ul>
+								</div>
+
+								<!-- Mega Menu -->
+								<div class="col-sm-3 col-xs-12">
+									<a href="{% url 'shop' %}">
+										<img class="img-responsive" src="images/shop/header-img.jpg" alt="menu image" />
+									</a>
+								</div>
+							</div><!-- / .row -->
+						</div><!-- / .dropdown-menu -->
+					</li><!-- / Pages -->
+
+
+
+					<!-- Blog -->
+					<li class="dropdown dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+							role="button" aria-haspopup="true" aria-expanded="false">Blog <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'blog-left-sidebar' %}">Blog Left Sidebar</a></li>
+							<li><a href="{% url 'blog-right-sidebar' %}">Blog Right Sidebar</a></li>
+							<li><a href="{% url 'blog-full-width' %}">Blog Full Width</a></li>
+							<li><a href="{% url 'blog-grid' %}">Blog 2 Columns</a></li>
+							<li><a href="{% url 'blog-single' %}">Blog Single</a></li>
+						</ul>
+					</li><!-- / Blog -->
+
+					<!-- Shop -->
+					<li class="dropdown dropdown-slide">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+							role="button" aria-haspopup="true" aria-expanded="false">Elements <span
+								class="tf-ion-ios-arrow-down"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="{% url 'typography' %}">Typography</a></li>
+							<li><a href="{% url 'buttons' %}">Buttons</a></li>
+							<li><a href="{% url 'alerts' %}">Alerts</a></li>
+						</ul>
+					</li><!-- / Blog -->
+				</ul><!-- / .nav .navbar-nav -->
+
+			</div>
+			<!--/.navbar-collapse -->
+		</div><!-- / .container -->
+	</nav>
+</section>
